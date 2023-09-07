@@ -1,0 +1,147 @@
+header{
+    background-color: var(--dark-background-color);
+    padding: 0 28px;
+    height: 84px;
+    display: flex;
+    align-items: center;
+    gap: 22%;
+    position: relative;
+}
+
+.menu__hamburger-menu{
+    height: 32px;
+    width: 32px;
+    background-image: url("../assets/Hamburger_menu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.logo{
+    height: 56px;
+}
+
+.menu__button{
+    display: none;
+}
+
+.menu__list-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 50vw;
+    z-index: 2;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    background-color: var(--dark-background-color);
+}
+
+.menu__list-menu .list-menu__item{
+    margin-top: 24px;
+}
+
+hr.menu__row{
+    margin: 0;
+    border: solid 1px var(--dark-background-color);
+    width: 80%;
+    height: 2px;
+    margin-top: 16px;
+    color: aliceblue;
+    background-image: linear-gradient(to right, var(--second-aquamarine), var(--third-aquamarine));
+}
+
+.menu__list-menu .list-menu__last-item{
+    margin-top: 16px;
+}
+
+.list-menu__link{
+    text-decoration: none;
+    color: var(--main-purple);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.list-menu__link:active{
+    color: var(--second-aquamarine)
+}
+
+.menu__button:checked ~ .menu__list-menu{
+    display: block;
+}
+
+nav ul li .link{
+    display: none;
+}
+
+nav ul li .button{
+    display: none;
+}
+
+@media screen and (min-width: 416px){
+    header{
+        background-color: var(--dark-background-color);
+        padding: 0 88px;
+        height: 72px;
+        width: 100%;
+        box-shadow: 1px 1px 20px #272323;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        box-sizing: border-box;
+        z-index: 1;
+        top: 0
+    }
+
+    .menu__hamburger-menu{
+       display: none;
+    }
+
+    label{
+        display: none;
+    }
+
+    .logo{
+        height: 52px;
+    }
+
+    nav ul{
+        display: flex;
+        align-items: center;
+        gap: 40px
+    }
+
+    nav ul li .link{
+        display: block;
+        text-decoration: none;
+        padding: 4px 0;
+        color: var(--main-purple);
+        font-weight: 600;
+    }
+
+    nav ul li .link:hover{
+        color: var(--third-aquamarine);
+        transition: 0.5s;
+    }
+
+    #current-page{
+        border-bottom: solid 2px var(--main-aquamarine);
+    }
+
+    nav ul li .button{
+        display: block;
+        text-decoration: none;
+        padding: 8px 16px;
+        border-radius: 10px;
+        color: var(--main-purple);
+        background-color: var(--main-aquamarine);
+        font-weight: 600;
+        letter-spacing: 0;
+    }
+
+    nav ul li .button:hover{
+        background-color: var(--third-aquamarine);
+        transition: 1s;
+    }
+}

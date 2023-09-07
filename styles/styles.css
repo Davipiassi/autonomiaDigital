@@ -1,0 +1,21 @@
+@import url("header.css");
+@import url("main.css");
+@import url("footer.css");
+
+:root{
+    --main-background-color: #382B3D;
+    --dark-background-color: #2C1E32;
+    --main-purple: #B51E9C;
+    --main-aquamarine: #49DEA2;
+    --second-aquamarine: #40DBC6;
+    --third-aquamarine: #34CEDB;
+    --main-font-color: #DFFFF2;
+    --second-font-color: #B0C3BC;
+    --main-font: 'Inter', sans-serif;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--main-background-color);
+    max-width: 1420px;
+}
