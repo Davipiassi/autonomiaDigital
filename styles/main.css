@@ -84,6 +84,13 @@ button{
     font-weight: 600;
 }
 
+.card__class-link{
+    color: var(--main-purple);
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .timer{
     display: flex;
     flex-direction: column;
@@ -397,7 +404,7 @@ button{
     .card{
         width: 49.3%;
         min-width: 400px;
-        height: 140px;
+        height: 164px;
         border-radius: 40px;
         gap: 32px;
     }
@@ -424,6 +431,17 @@ button{
         font-size: 0.9rem;
         font-weight: 600;
         margin-top: 16px;
+        margin-bottom: 4px;
+    }
+
+    .card__class-link{
+        color: var(--main-purple);
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .card__class-link:hover{
+        text-decoration: underline;
     }
 
     .timer{
